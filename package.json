@@ -1,0 +1,14 @@
+{
+  "name": "zeehub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "author": "Umar Annur",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }                                                                                                           
+}
