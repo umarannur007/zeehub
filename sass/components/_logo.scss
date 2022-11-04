@@ -1,0 +1,26 @@
+.logo {
+    font-size: 3rem;
+
+    &__text {
+        position: relative;
+
+        &--white {
+            color: var(--color-white);
+        }
+
+        &--blue {
+            color: var(--color-blue);
+        }
+
+        &::after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            background-color: var(--color-red);
+            position: absolute;
+            bottom: 15px;
+            right: -7px;
+            border-radius: 50%;
+        }
+    }
+}
