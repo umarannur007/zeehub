@@ -5,3 +5,14 @@ body{
     color: var(--color-grey-dark-2);
     font-size: var(--default-font-size);
 }
+.paragraph {
+    font-size: var(--default-font-size);
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+.heading-primary{
+    font-size: 5rem;
+    color: var(--color-white);
+}

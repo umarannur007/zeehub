@@ -1,0 +1,32 @@
+@use "sass:math";
+
+$grid-cols: 12;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+.col-1 {
+    flex-basis: math.div(100, math.div($grid-cols, 1) ) * 1%;
+}
+.col-2 {
+    flex-basis: math.div(100, math.div($grid-cols, 2) ) * 1%;
+}
+.col-3 {
+    flex-basis: math.div(100, math.div($grid-cols, 3) ) * 1%;
+}
+.col-4 {
+    flex-basis: math.div(100, math.div($grid-cols, 4) ) * 1%;
+}
+.col-5 {
+    flex-basis: math.div(100, math.div($grid-cols, 5) ) * 1%;
+}
+.col-6 {
+    flex-basis: math.div(100, math.div($grid-cols, 6) ) * 1%;
+}
+.col-7 {
+    flex-basis: math.div(100, math.div($grid-cols, 7) ) * 1%;
+}
+.col-8 {
+    flex-basis: math.div(100, math.div($grid-cols, 8) ) * 1%;
+}
