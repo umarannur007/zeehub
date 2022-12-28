@@ -25,3 +25,13 @@
         }
     }
 }
+
+.video-bg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/video-bg.jpg);
+    height: 50rem;
+    margin-top: 5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

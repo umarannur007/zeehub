@@ -82,12 +82,68 @@ body {
   padding: 1rem 4rem;
   display: inline-block;
   border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: var(--default-font-size);
+  border: none;
+  cursor: pointer;
 }
 .btn--white {
   background-color: var(--color-white);
   color: var(--color-grey-dark-1);
 }
+.btn--white::after {
+  background-color: var(--color-white);
+}
 
+.play-btn {
+  height: 10rem;
+  width: 10rem;
+  background-color: var(--color-red);
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.play-btn::before {
+  content: "";
+  height: 8rem;
+  width: 8rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  border-radius: 50%;
+}
+.play-btn::after {
+  content: "";
+  height: 6rem;
+  width: 6rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  border-radius: 50%;
+}
+.play-btn::before {
+  animation: pulse 2s ease-out infinite;
+}
+.play-btn::after {
+  animation: pulse 2s 1s ease-out infinite;
+}
+.play-btn ion-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--color-white);
+  position: absolute;
+  left: 4rem;
+  z-index: 1;
+}
+
+@keyframes pulse {
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -148,6 +204,16 @@ body {
 .header__text-right img {
   position: absolute;
   right: 10rem;
+}
+
+.video-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/video-bg.jpg);
+  height: 50rem;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navigation {

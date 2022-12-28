@@ -1,15 +1,79 @@
-.btn{
+.btn {
     &,
     &:link,
-    &:visited{
+    &:visited {
         text-decoration: none;
         padding: 1rem 4rem;
         display: inline-block;
         border-radius: 10rem;
-    }
+        transition: all .2s;
+        position: relative;
+        font-size: var(--default-font-size);
 
-    &--white{
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+    &--white {
         background-color: var(--color-white);
         color: var(--color-grey-dark-1);
+
+        &::after {
+            background-color: var(--color-white);
+        }
+    }
+}
+
+.play-btn{
+    height: 10rem;
+    width: 10rem;
+    background-color: var(--color-red);
+    border-radius: 50%;
+    border: none;
+    position: relative;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+
+    &::before{
+        content: "";
+        height: 8rem;
+        width: 8rem;
+        background-color: rgba($color: #fff, $alpha: .5);
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    &::after{
+        content: "";
+        height: 6rem;
+        width: 6rem;
+        background-color: rgba($color: #fff, $alpha: .3);
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    &::before{
+        animation: pulse 2s ease-out infinite;
+    }
+    
+    &::after{
+        animation: pulse 2s 1s ease-out infinite;
+    }
+
+    & ion-icon{
+        height: 2.5rem;
+        width: 2.5rem;
+        color: var(--color-white);
+        position: absolute;
+        left: 4rem;
+        z-index: 1;
+    }
+}
+
+@keyframes pulse {
+    100%{
+        transform: scale(2.5);
+        opacity: 0;
     }
 }
