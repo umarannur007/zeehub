@@ -1,0 +1,34 @@
+@media (max-width: 1000px){
+    html{
+        font-size: 50%
+    }
+    .header__text-right {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 850px){
+    .heading-primary{
+        font-size: 4rem;
+    }
+    .navigation{
+        display: none;
+    }
+    .navigation-toggle{
+        display: block;
+    }
+    .navigation-sm{
+        display: flex;
+        background-color: #fff;
+        width: 40rem;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+    }
+    
+    .header__text-box{
+        margin-top: 0;
+        padding-top: 10rem;
+    }
+}

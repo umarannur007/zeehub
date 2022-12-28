@@ -38,5 +38,9 @@
             height: 20px;
         }
     }
+
+    &-sm, &-toggle{
+        display: none;
+    }
 }
 

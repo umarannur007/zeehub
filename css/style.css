@@ -30,8 +30,9 @@ body {
 }
 
 .container {
-  max-width: 114rem;
+  max-width: 120rem;
   margin: 0 auto;
+  padding: 0 5rem;
 }
 
 body {
@@ -195,7 +196,7 @@ body {
 .header__text-left img {
   position: absolute;
   top: 0;
-  right: 4rem;
+  right: 2rem;
 }
 .header__text-right {
   margin-left: 15rem;
@@ -252,6 +253,9 @@ body {
 .navigation__search ion-icon {
   width: 20px;
   height: 20px;
+}
+.navigation-sm, .navigation-toggle {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
