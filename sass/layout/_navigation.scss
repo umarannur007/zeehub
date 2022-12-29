@@ -42,6 +42,31 @@
     &-sm, &-toggle{
         display: none;
     }
+    &-top{
+        display: flex;
+        align-items: center;
+        padding-top: 2rem;
+
+        & .logo{
+            margin-left: auto;
+        }
+    }
+    &-toggle{
+        position: fixed;
+        & button{
+            background-color: var(--color-white);
+            border: none;
+            outline: none;
+            height: 5rem;
+            width: 5rem;
+            border-radius: 100%;
+
+            & ion-icon{
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+    }
 }
 .navigation-sm{
     background-color: #fff;

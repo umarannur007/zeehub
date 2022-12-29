@@ -26,3 +26,12 @@
         padding-top: 10rem;
     }
 }
+@media (max-width: 550px){
+    .header__text-box .col-6{
+        flex-basis: 100%;
+    }
+    .header__text-right {
+        margin-left: 0;
+        
+    }
+}
