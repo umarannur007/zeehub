@@ -22,6 +22,10 @@
             background-color: var(--color-white);
         }
     }
+    &--primary{
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
 }
 
 .play-btn{

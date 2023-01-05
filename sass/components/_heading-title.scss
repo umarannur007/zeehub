@@ -1,0 +1,22 @@
+.header-title{
+    & span{
+        position: relative;
+        font-weight: 400;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 2.5rem;
+            height: 2px;
+            background-color: var(--color-blue);
+            top: 45%;
+            margin-left: .5rem;
+        }
+    }
+
+    & h1{
+        font-weight: 700;
+        color: var(--color-primary);
+        font-size: 3rem;
+        line-height: 1.3;
+    }
+}

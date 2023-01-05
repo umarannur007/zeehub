@@ -14,8 +14,8 @@
     .navigation{
         display: none;
     }
-    .navigation-toggle{
-        display: block;
+    .navigation-top{
+        display: flex;
     }
     .navigation-sm{
         display: flex;
@@ -32,6 +32,8 @@
     }
     .header__text-right {
         margin-left: 0;
-        
+    }
+    .container{
+        padding: 2.5rem;
     }
 }
